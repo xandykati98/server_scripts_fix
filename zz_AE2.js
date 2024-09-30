@@ -20,7 +20,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:fluix_plate',
         C: 'ae2:energy_acceptor'
     }
-    ).id('kubejs:ae2/controller').priority(100)
+    ).id('kubejs:ae2/controller')
 
     // Energy Acceptor
     event.remove({ id: 'ae2:network/blocks/energy_energy_acceptor' })
@@ -34,7 +34,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:fluix_plate',
         C: 'gtceu:lv_machine_hull'
     }
-    ).id('kubejs:ae2/energy_acceptor').priority(100)
+    ).id('kubejs:ae2/energy_acceptor')
 
     // ME Chest
     event.remove({ id: 'ae2:network/blocks/storage_chest' })
@@ -52,7 +52,7 @@ ServerEvents.loaded(event => {
         F: 'gtceu:dark_steel_block',
         G: 'gtceu:nether_quartz_plate'
     }
-    ).id('kubejs:ae2/chest').priority(100)
+    ).id('kubejs:ae2/chest')
 
     // ME Drive
     event.remove({ id: 'ae2:network/blocks/storage_drive' })
@@ -68,7 +68,7 @@ ServerEvents.loaded(event => {
         D: 'ae2:chest',
         E: 'gtceu:mv_sensor'
     }
-    ).id('kubejs:ae2/storage_drive').priority(100)
+    ).id('kubejs:ae2/storage_drive')
 
     // Inscriber
     event.remove({ id: 'ae2:network/blocks/inscribers' })
@@ -83,7 +83,7 @@ ServerEvents.loaded(event => {
         C: 'gtceu:fluix_gem',
         D: 'gtceu:mv_machine_hull'
     }
-    ).id('kubejs:ae2/inscriber').priority(100)
+    ).id('kubejs:ae2/inscriber')
 
     // Patterns
     event.remove({ id: 'ae2:network/crafting/patterns_blank' })
@@ -97,7 +97,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:polyethylene_plate',
         C: '#gtceu:circuits/hv'
     }
-    ).id('kubejs:ae2/blank_pattern').priority(100)
+    ).id('kubejs:ae2/blank_pattern')
 
     // Pattern Provider
     event.remove({ id: 'ae2:network/blocks/pattern_providers_interface' })
@@ -113,7 +113,7 @@ ServerEvents.loaded(event => {
         D: 'gtceu:mv_machine_hull',
         E: 'ae2:formation_core'
     }
-    ).id('kubejs:ae2/pattern_provider').priority(100)
+    ).id('kubejs:ae2/pattern_provider')
 
     // Molecular Assembler
     event.remove({ id: 'ae2:network/crafting/molecular_assembler' })
@@ -129,7 +129,7 @@ ServerEvents.loaded(event => {
         D: 'minecraft:crafting_table',
         E: 'ae2:formation_core'
     }
-    ).id('kubejs:ae2/molecular_assembler').priority(100)
+    ).id('kubejs:ae2/molecular_assembler')
 
     // Interface
     event.remove({ id: 'ae2:network/blocks/interfaces_interface' })
@@ -145,7 +145,7 @@ ServerEvents.loaded(event => {
         D: 'gtceu:mv_machine_hull',
         E: 'ae2:formation_core'
     }
-    ).id('kubejs:ae2/interface').priority(100)
+    ).id('kubejs:ae2/interface')
 
     // Requester
     event.remove({ id: 'merequester:requester' })
@@ -160,7 +160,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/hv',
         D: 'gtceu:hv_machine_hull',
     }
-    ).id('kubejs:ae2/requster').priority(100)
+    ).id('kubejs:ae2/requster')
 
     // Quantum Ring
     event.remove({ id: 'ae2:network/blocks/quantum_ring' })
@@ -175,7 +175,7 @@ ServerEvents.loaded(event => {
         C: 'gtceu:quantum_star',
         D: 'ae2:engineering_processor'
     }
-    ).id('kubejs:ae2/quantum_ring').priority(100)
+    ).id('kubejs:ae2/quantum_ring')
 
     // Quantum Link Chamber
     event.remove({ id: 'ae2:network/blocks/quantum_link' })
@@ -189,7 +189,7 @@ ServerEvents.loaded(event => {
         B: 'ae2:fluix_pearl',
         C: 'gtceu:certus_quartz_plate'
     }
-    ).id('kubejs:ae2/quantum_link').priority(100)
+    ).id('kubejs:ae2/quantum_link')
 
     // Storage Cell Removal
     event.remove({ id: 'ae2:network/cells/item_storage_cell_1k' })
@@ -221,7 +221,7 @@ ServerEvents.loaded(event => {
         A: 'gtceu:fine_red_alloy_wire',
         B: 'gtceu:electrical_steel_plate'
     }
-    ).id('kubejs:ae2/item_cell_housing').priority(100)
+    ).id('kubejs:ae2/item_cell_housing')
 
     event.remove({ id: 'ae2:network/cells/fluid_cell_housing' })
     event.shaped(
@@ -233,7 +233,7 @@ ServerEvents.loaded(event => {
         A: 'gtceu:fine_red_alloy_wire',
         B: 'gtceu:energetic_alloy_plate'
     }
-    ).priority(100)
+    )
 
     // CPUs
     event.remove({ id: 'ae2:network/crafting/cpu_crafting_unit' })
@@ -248,7 +248,7 @@ ServerEvents.loaded(event => {
         C: 'ae2:fluix_glass_cable',
         D: 'ae2:logic_processor'
     }
-    ).id('kubejs:ae2/cpu_crafting_unit').priority(100)
+    ).id('kubejs:ae2/cpu_crafting_unit')
 
     // Charger
     event.remove({ id: 'ae2:network/blocks/crystal_processing_charger' })
@@ -261,7 +261,7 @@ ServerEvents.loaded(event => {
         A: 'gtceu:dark_steel_plate',
         B: 'gtceu:certus_quartz_plate'
     }
-    ).id('kubejs:ae2/charger').priority(100)
+    ).id('kubejs:ae2/charger')
 
     // Charged Certus
 
@@ -275,7 +275,7 @@ ServerEvents.loaded(event => {
         "result": {
             "item": 'gtceu:charged_certus_quartz_gem'
         }
-    }).id('kubejs:ae2/charged_certus_quartz_gem').priority(100)
+    }).id('kubejs:ae2/charged_certus_quartz_gem')
 
     event.recipes.gtceu.autoclave("charged_autoclave")
         .itemInputs(["gtceu:certus_quartz_gem"])
@@ -295,7 +295,7 @@ ServerEvents.loaded(event => {
         A: 'gtceu:titanium_plate',
         B: 'gtceu:quantum_star'
     }
-    ).id('kubejs:ae2/matter_condensor').priority(100)
+    ).id('kubejs:ae2/matter_condensor')
 
     // Storage Component 1K
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_1k_part' })
@@ -309,7 +309,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:red_alloy_plate',
         C: '#gtceu:circuits/lv'
     }
-    ).id('kubejs:ae2/storage_component_1k').priority(100)
+    ).id('kubejs:ae2/storage_component_1k')
 
     // Storage Component 4K
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_4k_part' })
@@ -324,7 +324,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/mv',
         D: 'ae2:calculation_processor'
     }
-    ).id('kubejs:ae2/storage_component_4k').priority(100)
+    ).id('kubejs:ae2/storage_component_4k')
 
     // Storage Component 16K
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_16k_part' })
@@ -339,7 +339,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/hv',
         D: 'ae2:engineering_processor'
     }
-    ).id('kubejs:ae2/storage_component_16k').priority(100)
+    ).id('kubejs:ae2/storage_component_16k')
 
     // Storage Component 64K
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_64k_part' })
@@ -354,7 +354,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/ev',
         D: 'ae2:engineering_processor'
     }
-    ).id('kubejs:ae2/storage_component_64k').priority(100)
+    ).id('kubejs:ae2/storage_component_64k')
 
     // Storage Component 256K
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_256k_part' })
@@ -369,7 +369,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/iv',
         D: 'ae2:engineering_processor'
     }
-    ).id('kubejs:ae2/storage_component_256k').priority(100)
+    ).id('kubejs:ae2/storage_component_256k')
 
     // Wireless Receiver
     event.remove({ id: 'ae2:network/wireless_part' })
@@ -383,7 +383,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:titanium_plate',
         C: 'ae2:fluix_pearl'
     }
-    ).id('kubejs:ae2/wirelss_receiver').priority(100)
+    ).id('kubejs:ae2/wirelss_receiver')
 
     // AE2 Cards
     event.remove({ id: 'ae2:materials/basiccard' })
@@ -397,7 +397,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:iron_plate',
         C: 'ae2:calculation_processor'
     }
-    ).id('kubejs:ae2/basic_card').priority(100)
+    ).id('kubejs:ae2/basic_card')
     event.remove({ id: 'ae2:materials/advancedcard' })
     event.shaped(
         'ae2:advanced_card', [
@@ -409,19 +409,19 @@ ServerEvents.loaded(event => {
         B: 'gtceu:electrical_steel_plate',
         C: 'ae2:calculation_processor'
     }
-    ).id('kubejs:ae2/advanced_card').priority(100)
+    ).id('kubejs:ae2/advanced_card')
     event.remove({ id: 'ae2:tools/network_memory_card' })
-    event.shapeless('ae2:memory_card', ['#gtceu:circuits/hv', 'ae2:basic_card']).id('kubejs:ae2/memory_card').priority(100)
+    event.shapeless('ae2:memory_card', ['#gtceu:circuits/hv', 'ae2:basic_card']).id('kubejs:ae2/memory_card')
 
 
 
     //Level Emitter
     event.remove({ id: 'ae2:network/parts/level_emitter' })
-    event.shapeless('ae2:level_emitter', ['minecraft:redstone_torch', 'gtceu:aluminium_plate', 'ae2:calculation_processor', '#forge:rods/stainless_steel']).id('kubejs:ae2/level_emitter').priority(100)
+    event.shapeless('ae2:level_emitter', ['minecraft:redstone_torch', 'gtceu:aluminium_plate', 'ae2:calculation_processor', '#forge:rods/stainless_steel']).id('kubejs:ae2/level_emitter')
 
     //Energy level Emitter
     event.remove({ id: 'ae2:network/parts/energy_level_emitter' })
-    event.shapeless('ae2:energy_level_emitter', ['ae2:level_emitter', '#forge:gems/certus_quartz']).id('kubejs:ae2/energy_level_emitter').id('kubejs:ae2/energy_level_emitter').priority(100)
+    event.shapeless('ae2:energy_level_emitter', ['ae2:level_emitter', '#forge:gems/certus_quartz']).id('kubejs:ae2/energy_level_emitter').id('kubejs:ae2/energy_level_emitter')
 
 
     // Network Tool (default recipe is fine)
@@ -445,7 +445,7 @@ ServerEvents.loaded(event => {
         "result": {
             "item": "ae2:printed_calculation_processor"
         }
-    }).id('kubejs:ae2/calculation_processor_print').priority(100)
+    }).id('kubejs:ae2/calculation_processor_print')
 
     event.remove({ id: 'ae2:inscriber/silicon_print' })
     event.custom({
@@ -462,7 +462,7 @@ ServerEvents.loaded(event => {
         "result": {
             "item": "ae2:printed_silicon"
         }
-    }).id('kubejs:ae2/silicon_print').priority(100)
+    }).id('kubejs:ae2/silicon_print')
 
     event.remove({ id: 'ae2:inscriber/logic_processor' })
     event.custom({
@@ -482,7 +482,7 @@ ServerEvents.loaded(event => {
         "result": {
             "item": "ae2:logic_processor"
         }
-    }).id('kubejs:ae2/logic_processor').priority(100)
+    }).id('kubejs:ae2/logic_processor')
 
     event.remove({ id: 'ae2:inscriber/calculation_processor' })
     event.custom({
@@ -502,7 +502,7 @@ ServerEvents.loaded(event => {
         "result": {
             "item": "ae2:calculation_processor"
         }
-    }).id('kubejs:ae2/calculation_processor').priority(100)
+    }).id('kubejs:ae2/calculation_processor')
 
     event.remove({ id: 'ae2:inscriber/engineering_processor' })
     event.custom({
@@ -522,7 +522,7 @@ ServerEvents.loaded(event => {
         "result": {
             "item": "ae2:engineering_processor"
         }
-    }).id('kubejs:ae2/engineering_processor').priority(100)
+    }).id('kubejs:ae2/engineering_processor')
 
     //Storage bus
     event.remove({ id: 'ae2:network/parts/storage_bus' })
@@ -540,7 +540,7 @@ ServerEvents.loaded(event => {
         B: 'ae2:formation_core',
         C: 'gtceu:mv_electric_piston',
         D: 'gtceu:aluminium_plate'
-    }).id('kubejs:ae2/export_bus').priority(100)
+    }).id('kubejs:ae2/export_bus')
     event.remove({ id: 'ae2:network/parts/export_bus' })
     event.shaped(
         'ae2:import_bus', [
@@ -552,7 +552,7 @@ ServerEvents.loaded(event => {
         B: 'ae2:annihilation_core',
         C: 'gtceu:mv_electric_piston',
         D: 'gtceu:aluminium_plate'
-    }).id('kubejs:ae2/import_bus').priority(100)
+    }).id('kubejs:ae2/import_bus')
 
     //P2P
     event.remove({ id: 'ae2:network/parts/tunnels_me' })
@@ -565,7 +565,7 @@ ServerEvents.loaded(event => {
         A: 'gtceu:stainless_steel_plate',
         B: 'ae2:engineering_processor',
         C: 'gtceu:fluix_plate'
-    }).id('kubejs:ae2/p2p_tunnel').priority(100)
+    }).id('kubejs:ae2/p2p_tunnel')
 
     //cables
 
@@ -678,7 +678,7 @@ ServerEvents.loaded(event => {
             "count": 2,
             "item": "gtceu:fluix_gem"
         }
-    }).id('kubejs:ae2/fluix_gem').priority(100)
+    }).id('kubejs:ae2/fluix_gem')
     event.replaceInput({ id: /ae2/ }, 'ae2:fluix_block', 'gtceu:fluix_block')
 
     event.recipes.gtceu.mixer('fluix')
@@ -769,7 +769,7 @@ ServerEvents.loaded(event => {
         "result": {
             "item": "megacells:printed_accumulation_processor"
         }
-    }).id('kubejs:mega/accumulation_processor_print').priority(100)
+    }).id('kubejs:mega/accumulation_processor_print')
 
     event.remove({ id: "megacells:inscriber/accumulation_processor" })
     event.custom({
@@ -789,7 +789,7 @@ ServerEvents.loaded(event => {
         "result": {
             "item": "megacells:accumulation_processor"
         }
-    }).id('kubejs:mega/accumulation_processor').priority(100)
+    }).id('kubejs:mega/accumulation_processor')
 
     // Storage Component 1M
     event.remove({ id: 'megacells:cells/cell_component_1m' })
@@ -804,7 +804,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/iv',
         D: 'megacells:accumulation_processor'
     }
-    ).id('kubejs:mega/storage_component_1m').priority(100)
+    ).id('kubejs:mega/storage_component_1m')
 
     // Storage Component 4M
     event.remove({ id: 'megacells:cells/cell_component_4m' })
@@ -819,7 +819,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/luv',
         D: 'megacells:accumulation_processor'
     }
-    ).id('kubejs:mega/storage_component_4m').priority(100)
+    ).id('kubejs:mega/storage_component_4m')
 
     // Storage Component 4M
     event.remove({ id: 'megacells:cells/cell_component_16m' })
@@ -834,7 +834,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/luv',
         D: 'gtceu:quantum_eye'
     }
-    ).id('kubejs:mega/storage_component_16m').priority(100)
+    ).id('kubejs:mega/storage_component_16m')
 
     // Storage Component 4M
     event.remove({ id: 'megacells:cells/cell_component_64m' })
@@ -849,7 +849,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/zpm',
         D: 'gtceu:quantum_eye'
     }
-    ).id('kubejs:mega/storage_component_64m').priority(100)
+    ).id('kubejs:mega/storage_component_64m')
 
     // Storage Component 4M
     event.remove({ id: 'megacells:cells/cell_component_256m' })
@@ -864,7 +864,7 @@ ServerEvents.loaded(event => {
         C: '#gtceu:circuits/zpm',
         D: 'gtceu:quantum_eye'
     }
-    ).id('kubejs:mega/storage_component_256m').priority(100)
+    ).id('kubejs:mega/storage_component_256m')
 
     event.remove({ id: /megacells:cells\/standard\/.*storage_cell.*m$/ })
 
@@ -878,7 +878,7 @@ ServerEvents.loaded(event => {
         A: 'gtceu:fine_lumium_wire',
         B: 'gtceu:naquadah_plate'
     }
-    ).id('kubejs:mega/item_cell_housing').priority(100)
+    ).id('kubejs:mega/item_cell_housing')
 
     event.remove({ id: "megacells:cells/mega_fluid_cell_housing" })
     event.shaped(
@@ -890,7 +890,7 @@ ServerEvents.loaded(event => {
         A: 'gtceu:fine_lumium_wire',
         B: 'gtceu:crystal_matrix_plate'
     }
-    ).id('kubejs:mega/fluid_cell_housing').priority(100)
+    ).id('kubejs:mega/fluid_cell_housing')
 
     event.remove({ id: "megacells:cells/standard/bulk_item_cell" }) //recipe in SDA
     event.remove({ id: "megacells:crafting/bulk_cell_component" })
@@ -915,7 +915,7 @@ ServerEvents.loaded(event => {
         C: 'ae2:crafting_unit',
         D: 'megacells:accumulation_processor'
     }
-    ).id('kubejs:mega/cpu_crafting_unit').priority(100)
+    ).id('kubejs:mega/cpu_crafting_unit')
 
     //Remove duplicates
     event.remove({ id: "megacells:crafting/mega_crafting_accelerator" })
@@ -925,10 +925,10 @@ ServerEvents.loaded(event => {
 
     //MAE2 compat stuff
     event.remove({ id: /mae2/ })
-    event.shapeless('mae2:4x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_4k']).priority(100)
-    event.shapeless('mae2:16x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_16k']).priority(100)
-    event.shapeless('mae2:64x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_64k']).priority(100)
-    event.shapeless('mae2:256x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_256k']).priority(100)
+    event.shapeless('mae2:4x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_4k'])
+    event.shapeless('mae2:16x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_16k'])
+    event.shapeless('mae2:64x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_64k'])
+    event.shapeless('mae2:256x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_256k'])
 
     event.shaped(
         'mae2:item_multi_p2p_tunnel', [
@@ -940,7 +940,7 @@ ServerEvents.loaded(event => {
         B: 'megacells:accumulation_processor',
         C: 'gtceu:sapphire_plate',
         D: 'gtceu:fluix_plate'
-    }).id('kubejs:ae2/multi_p2p_tunnel').priority(100)
+    }).id('kubejs:ae2/multi_p2p_tunnel')
 
     // Alternate Storage Component Recipes
 
@@ -955,7 +955,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:red_alloy_plate',
         C: '#gtceu:circuits/mv'
     }
-    ).id('kubejs:ae2/storage_component_1k_double').priority(100)
+    ).id('kubejs:ae2/storage_component_1k_double')
 
     event.shaped(
         '4x ae2:cell_component_1k', [
@@ -967,7 +967,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:red_alloy_plate',
         C: '#gtceu:circuits/hv'
     }
-    ).id('kubejs:ae2/storage_component_1k_quad').priority(100)
+    ).id('kubejs:ae2/storage_component_1k_quad')
 
     event.shaped(
         '8x ae2:cell_component_1k', [
@@ -979,7 +979,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:red_alloy_plate',
         C: '#gtceu:circuits/ev'
     }
-    ).id('kubejs:ae2/storage_component_1k_oct').priority(100)
+    ).id('kubejs:ae2/storage_component_1k_oct')
 
     event.shaped(
         '16x ae2:cell_component_1k', [
@@ -991,7 +991,7 @@ ServerEvents.loaded(event => {
         B: 'gtceu:red_alloy_plate',
         C: '#gtceu:circuits/iv'
     }
-    ).id('kubejs:ae2/storage_component_1k_hex').priority(100)
+    ).id('kubejs:ae2/storage_component_1k_hex')
 
     //Cheaper ramp up to reduce exponential effect
     event.recipes.gtceu.assembler("kubejs:ae2/4k_storage_assembler")
@@ -1219,7 +1219,7 @@ ServerEvents.loaded(event => {
         },
         mode: "press",
         result: { item: "ae2wtlib:quantum_bridge_card" }
-    }).id('kubejs:ae2wtlib/quantum_bridge_card').priority(100)
+    }).id('kubejs:ae2wtlib/quantum_bridge_card')
 
     //Fluix Dust Inscriber 
     // event.remove({ id: 'jei:ae2/inscriber/fluix_dust' }) (I don't know what's wrong with that recipe but it doesn't want to be removed or replaceoutput)
@@ -1234,7 +1234,7 @@ ServerEvents.loaded(event => {
         "result": {
             "item": "gtceu:fluix_dust"
         }
-    }).id('kubejs:ae2/fluix_dust_inscriber').priority(100)
+    }).id('kubejs:ae2/fluix_dust_inscriber')
 
     //Certus Quartz Crystal
     event.remove({ input: 'ae2:certus_quartz_crystal'})
@@ -1259,7 +1259,7 @@ ServerEvents.loaded(event => {
     ],{
         A: '#forge:gems/certus_quartz'
     }
-    ).id('kubejs:gtceu/certus_quartz_block').priority(100)
+    ).id('kubejs:gtceu/certus_quartz_block')
     
     // Vibrant Quartz Glass
     event.remove({output: 'ae2:quartz_vibrant_glass'})
@@ -1271,7 +1271,7 @@ ServerEvents.loaded(event => {
 
     // Terminal
         event.remove({id: 'ae2:network/parts/terminals'})
-        event.shapeless('ae2:terminal', ['#ae2:illuminated_panel', '#gtceu:circuits/lv']).id('kubejs:ae2_terminal').priority(100)
+        event.shapeless('ae2:terminal', ['#ae2:illuminated_panel', '#gtceu:circuits/lv']).id('kubejs:ae2_terminal')
 
     // Cable stuff
 
