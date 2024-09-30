@@ -1,7 +1,4 @@
-global._evil_global_has_reloaded = false;
-
-ServerEvents.loaded(event => {
-    if (global._evil_global_has_reloaded) return;
+ServerEvents.recipes(event => {
     // Your recipe fixes here
         // Base AE2
     // ME Controller
@@ -1330,7 +1327,4 @@ ServerEvents.loaded(event => {
     colors.forEach(coloredCoveredCable)
     colors.forEach(coveredDenseCable)
     colors.forEach(smartDenseCable)
-    console.log("Forcing reload to work around KubeJS bugs...")
-    Utils.server.runCommand("reload");  
-    global._evil_global_has_reloaded = true;
 })
