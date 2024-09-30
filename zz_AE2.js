@@ -1,7 +1,3 @@
-ServerEvents.recipes(event => {
-    event.addIdToStage('post_advanced_peripherals', 'advanced_peripherals:*')
-
-})
 global._evil_global_has_reloaded = false;
 
 ServerEvents.loaded(event => {
