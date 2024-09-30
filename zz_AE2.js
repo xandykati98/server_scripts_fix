@@ -1,6 +1,11 @@
 ServerEvents.recipes(event => {
+    event.addIdToStage('post_advanced_peripherals', 'advanced_peripherals:*')
 
-    // Base AE2
+})
+
+ServerEvents.recipeStageRecipes('post_advanced_peripherals', event => {
+    // Your recipe fixes here
+        // Base AE2
     // ME Controller
     event.remove({ id: 'ae2:network/blocks/controller' })
     event.shaped(
