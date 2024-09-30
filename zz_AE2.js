@@ -1,9 +1,4 @@
-ServerEvents.recipes(event => {
-    event.addIdToStage('post_advanced_peripherals', 'advanced_peripherals:*')
-
-})
-
-ServerEvents.recipeStageRecipes('post_advanced_peripherals', event => {
+onEvent('recipes', event => {
     // Your recipe fixes here
         // Base AE2
     // ME Controller
